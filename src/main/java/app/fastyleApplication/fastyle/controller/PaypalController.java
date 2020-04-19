@@ -78,6 +78,7 @@ public class PaypalController {
 					cita.setServicioEstetico(servicio);
 					cita.setEstado("PENDIENTE");
 					saved = citaService.createOrUpdateCita(cita);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -86,7 +87,9 @@ public class PaypalController {
 			session.setAttribute("fallo", true);
 			return "redirect:/citaCrear/" + servicio.getId() + "/" + esteticista.getId();
 		}
-		return "accionRealizada";
+		
+		session.setAttribute("correcto", true);
+		return "redirect:/misCitas";
 	}
 
 	@PostMapping("/pay")

@@ -317,7 +317,6 @@
 .fixed-bottom {
 	position: absolute;
 }*/
-
 .card-body {
 	font-color: #595a5b;
 }
@@ -413,48 +412,50 @@ col-lg-4 col-md-6 mb-4 {
 	transition: 400ms;
 }
 
-
-
-body 
-     
- 
-  {
-		min-height:100% !important;
-		position:relative !important;
-	}
+body {
+	min-height: 100% !important;
+	position: relative !important;
+}
 
 .footer-fastyle {
+	position: absolute !important;
+	bottom: 0 !important;
+	width: 100% !important;
 	
-		position:absolute !important;
-		bottom:0 !important;
-		width:100% !important;
-				/* Height of the footer */
-		
-	}
-	
-	
-	
-	.links-footer a {
-    margin-right: 20px;
-    color: white;
 }
 
-
-.centrado{
-   
-     justify-content: center;
+.links-footer a {
+	margin-right: 20px;
+	color: white;
 }
 
+.centrado {
+	justify-content: center;
+}
 
 .alert-dismissible {
-    right: 10px;
-    bottom: 1px;
-
-.show p {
-    width: 80%;
+	right: 10px;
+	bottom: 1px;
+	.
+	show
+	p
+	{
+	width
+	:
+	80%;
 }
 
-.ayuda-container a{
-    color: #646B6C
+.ayuda-container a {
+	color: #646B6C
+}
+
+#paginaError {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cuerpoError {
+	margin-right: 10px;
 }
 

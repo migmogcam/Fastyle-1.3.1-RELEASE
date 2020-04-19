@@ -133,6 +133,22 @@
 						</div>
 					</div>
 
+
+
+					<div class="form-group row">
+						<div class="input-group">
+							<label class="col-lg-3 col-form-label form-control-label">Edad</label>
+
+							<div class="col-lg-7">
+								<input class="form-control number" type="number" min="18"
+									th:field="${esteticista.usuario.edad}" readonly>
+							</div>
+
+						</div>
+					</div>
+
+
+					<!-- 
 					<div class="form-group row">
 						<div class="input-group">
 							<label class="col-lg-3 col-form-label form-control-label">Edad</label>
@@ -145,6 +161,8 @@
 
 						</div>
 					</div>
+					
+					 -->
 
 					<div class="form-group row">
 						<label class="col-lg-3 col-form-label form-control-label">Rol</label>
@@ -166,20 +184,26 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Descripci&oacute;n</label>
-						<div class="col-lg-9">
+					<div class="form-group row">
+						<label class="col-lg-3 col-form-label form-control-label" for="exampleFormControlTextarea1">Descripci&oacute;n</label>
+						<div class="col-lg-7">
 							<textarea class="form-control"
 								th:field="${esteticista.descripcion}" rows="3"
 								th:disabled="${disableFields}" readonly></textarea>
 						</div>
 					</div>
 
-					<a th:href="@{/edit}" role="button"
-						class="btn btn-outline-primary btn-sm">Editar perfil</a>
-					<button type="button" class="btn btn-outline-danger btn-sm"
-						data-toggle="modal" data-target="#exampleModal">Eliminar
-						cuenta</button>
+
+					<div class="form-group row">
+						<div class="col-lg-12 text-center">
+							<a th:href="@{/edit}" role="button"
+								class="btn btn-outline-primary btn-sm">Editar perfil</a>
+							<button type="button" class="btn btn-outline-danger btn-sm"
+								data-toggle="modal" data-target="#exampleModal">Eliminar
+								cuenta</button>
+						</div>
+					</div>
+
 
 					<!-- Modal -->
 					<div class="modal fade" id="exampleModal" tabindex="-1"
@@ -195,8 +219,8 @@
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">¿Esta seguro que desea eliminar
-									todos los datos asociados a su cuenta?</div>
+								<div class="modal-body">¿Est&aacute seguro que desea
+									eliminar todos los datos asociados a su cuenta?</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-outline-secondary btn-sm"
 										data-dismiss="modal">Cancelar</button>
